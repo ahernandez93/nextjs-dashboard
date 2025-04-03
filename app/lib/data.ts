@@ -166,8 +166,8 @@ export async function fetchInvoiceById(id: string) {
   }
 }
 
-export async function fetchCustomers(query: string,
-  currentPage: number,) {
+export async function fetchCustomers(/* query: string,
+  currentPage: number, */) {
   try {
     const customers = await sql<CustomerField[]>`
       SELECT
